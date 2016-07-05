@@ -53,10 +53,10 @@ public class PlayerController : MonoBehaviour {
     if (Input.GetButton("Fire1") && Time.time > nextFire) {
       nextFire = Time.time + fireRate;
 
-      if (gameController.GetScore () >= 20 && gameController.GetScore () < 50) {
+      if (gameController.GetScore () >= 100 && gameController.GetScore () < 250) {
         Instantiate(shot, shotSpawns[1].position, shotSpawns[1].rotation);
         Instantiate(shot, shotSpawns[2].position, shotSpawns[2].rotation);
-      } else if (gameController.GetScore () >= 50) {
+      } else if (gameController.GetScore () >= 250) {
         Instantiate(shot, shotSpawns[0].position, shotSpawns[0].rotation);
         Instantiate(shot, shotSpawns[3].position, shotSpawns[3].rotation);
         Instantiate(shot, shotSpawns[4].position, shotSpawns[4].rotation);

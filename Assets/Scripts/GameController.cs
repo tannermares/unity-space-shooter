@@ -70,6 +70,10 @@ public class GameController : MonoBehaviour {
     UpdateScore ();
   }
 
+  public int GetScore () {
+    return score;
+  }
+
   void UpdateScore () {
     scoreText.text = "Score: " + score;
   }
